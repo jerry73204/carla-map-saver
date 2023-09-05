@@ -1,0 +1,20 @@
+[package]
+name = "carla-map-saver"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+carla = { version = "0.10.0" }
+clap = { version = "4.4.1", features = ["derive"] }
+flume = "0.11.0"
+itertools = "0.11.0"
+nalgebra = { version = "0.32.3" }
+pcd-rs = { version = "0.10.0", features = ["derive"] }
+rayon = "1.7.0"
+
+[patch.crates-io.carla]
+git = "https://github.com/jerry73204/carla-rust.git"
+rev = "c416be4fc9b15f4c1b1d4b9365a126b8b90b0e52"
